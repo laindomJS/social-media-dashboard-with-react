@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.total {
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+}
+
+.dm {
+    margin-right: .8rem;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+}
+
+.border {
+    visibility: hidden;
+}
+
+
+@media(max-width: 375px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .border {
+        visibility: visible;
+        border: 1px solid hsl(228, 12%, 44%);;
+        width: 100%;
+        margin: .8rem 0 .8rem 0;
+    }
+
+    .dark__mode--container {
+        display: flex;
+        justify-content: space-between;
+    }
+}

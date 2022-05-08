@@ -23,6 +23,20 @@
     visibility: hidden;
 }
 
+.btn__theme {
+    height: 35px;
+    width: 65px;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    transition: .3s ease-in;
+}
+
+
+
 
 @media(max-width: 375px) {
     .navbar {
@@ -44,5 +58,7 @@
     .dark__mode--container {
         display: flex;
         justify-content: space-between;
+        text-align: center;
+        align-items: center;
     }
 }

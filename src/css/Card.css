@@ -65,6 +65,7 @@
 }
 
 .down {
+    font-weight: 700;
     color: hsl(356, 69%, 56%);
     font-weight: 700;
 }

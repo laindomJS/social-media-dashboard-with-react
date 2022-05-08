@@ -8,6 +8,24 @@
     color: hsl(228, 12%, 44%);
 }
 
+.cards__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.up {
+    font-weight: 700;
+    color: hsl(163, 72%, 41%);
+    font-size: 15px;
+}
+
+.down {
+    color: hsl(356, 69%, 56%);
+    font-weight: 700;
+}
+
 @media (max-width: 375px) {
     .overview__section {
         padding: 1.2rem 0 0 1.8rem;

@@ -2,11 +2,12 @@ import './css/App.css';
 import iconF from './assets/images/icon-facebook.svg';
 import iconI from './assets/images/icon-instagram.svg';
 import iconT from './assets/images/icon-twitter.svg';
-import iconY from './assets/images/icon-twitter.svg';
+import iconY from './assets/images/icon-youtube.svg';
 import iconUp from './assets/images/icon-up.svg';
 import iconDown from './assets/images/icon-down.svg';
 import Navbar from './components/Navbar';
 import Card from './components/Card';
+import Overview from './components/Overview';
 
 function App() {
   return (
@@ -62,8 +63,10 @@ function App() {
           today = "144 Today"
           todayclassname = "todayNum down"
         />
-      
       </main>
+
+        <Overview />
+
     </div>
   );
 }

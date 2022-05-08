@@ -1,6 +1,6 @@
 .card {
-    width: 310px;
-    height: 290px;
+    width: 300px;
+    height: 270px;
     border-radius: 6px;
     background-color: hsl(227, 47%, 96%);
     padding: 1.2rem;
@@ -28,7 +28,7 @@
 }
 
 .social__net {
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,16 +44,16 @@
 
 .followers__show {
     text-align: center;
-    margin-bottom: 2.6rem;
+    margin-bottom: 2.2rem;
 }
 
 .numbers {
-    font-size: 70px;
+    font-size: 65px;
 }
 
 .card__content {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 5px;
     color: hsl(228, 12%, 44%);
 }

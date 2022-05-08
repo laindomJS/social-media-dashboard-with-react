@@ -1,11 +1,14 @@
 header {
-  padding: 2.2rem;
+  padding: 2rem;
   margin-bottom: 1.2rem;
 }
 
 main {
   display: flex;
+  justify-content: center;
 }
+
+
 
 @media (max-width: 375px) {
   main {

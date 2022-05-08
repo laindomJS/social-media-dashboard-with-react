@@ -1,0 +1,15 @@
+.overview__section {
+    margin-bottom: 4.2rem;
+    padding: 2.2rem;
+}  
+
+.overview__title {
+    font-size: 24px;
+    color: hsl(228, 12%, 44%);
+}
+
+@media (max-width: 375px) {
+    .overview__section {
+        padding: 1.2rem 0 0 1.8rem;
+    }
+}

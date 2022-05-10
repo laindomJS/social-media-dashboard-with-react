@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import './css/App.css';
 import iconF from './assets/images/icon-facebook.svg';
 import iconI from './assets/images/icon-instagram.svg';
@@ -8,15 +9,48 @@ import iconDown from './assets/images/icon-down.svg';
 import Navbar from './components/Navbar';
 import Card from './components/Card';
 import Overview from './components/Overview';
-import Button from './components/Button';
+import './css/Button.css';
 
 function App() {
+
+  const [checked, setChecked] = useState(localStorage.getItem("theme") === "dark" ? true : false);
+
+  useEffect( () => {
+    document
+      .getElementsByTagName("HTML")[0]
+      .setAttribute("data-theme", localStorage.getItem("theme"));
+
+      const elements = document.querySelectorAll("#crd");
+      const elementsArr = Array.from(elements);
+
+      elementsArr.forEach(el => {
+        el.setAttribute("data-theme", localStorage.getItem("theme"));
+      })
+
+      document.querySelector("#bl").setAttribute("data-theme", localStorage.getItem("theme"));
+})
     
+  const themeChanger = () => {
+    if (checked === false) {
+      localStorage.setItem("theme", "dark");
+      setChecked(true);
+    } else {
+      localStorage.setItem("theme", "light");
+      setChecked(false);
+    }
+  }
+
   return (
     <div className="App">
       <header>
         <Navbar />
-        <Button />
+        <section className="dark__mode--container">
+        <span className="dm">Dark Mode</span>
+        <label for="checkbox" className="toggler"> 
+            <input type="checkbox" defaultChecked={checked} onChange={() => themeChanger()} id="checkbox" />
+            <span className="ball" id="bl"></span>
+        </label>
+        </section>
       </header>
 
       <main>

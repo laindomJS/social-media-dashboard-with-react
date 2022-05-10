@@ -8,7 +8,7 @@
     color: hsl(228, 12%, 44%);
 }
 
-.overview__title--dark {
+.overview__title[data-theme="dark"] {
     color: #fff;
 }
 

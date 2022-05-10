@@ -8,17 +8,20 @@
 }
 /* RESET CSS END */
 
+html {
+  --bg-color: #fff;
+}
 
+html[data-theme="dark"] {
+  --bg-color: hsl(230, 17%, 14%);
+  --text-color: #fff;
+}
 
 /* BODY STYLES */
 body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
-
-.dark {
-  background-color: hsl(230, 17%, 14%);
-}
-
 /* BODY STYLES END */

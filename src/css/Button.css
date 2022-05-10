@@ -39,17 +39,14 @@
     transition: .3s ease;
 }
 
+.ball[data-theme="dark"] {
+    background-color: hsl(232, 19%, 15%);
+}
+
 #checkbox:checked + .ball {
     transform: translate(28px, -50%);
 }
 
-.toggler--dark {
-   background-color: hsl(146, 68%, 55%);
-}
-
-.ball--dark {
-    background-color: hsl(232, 19%, 15%);
-}
 
 @media (max-width: 375px) {
     .dark__mode--container {

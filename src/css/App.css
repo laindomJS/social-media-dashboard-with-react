@@ -10,11 +10,18 @@ main {
   justify-content: center;
 }
 
+article[data-theme="dark"] {
+  background-color: hsl(228, 28%, 20%);
+}
 
 
 @media (max-width: 375px) {
   main {
     padding: 0 0 0 1.2rem;
+    flex-direction: column;
+  }
+
+  header {
     flex-direction: column;
   }
 }

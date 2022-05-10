@@ -3,7 +3,7 @@ import '../css/Card.css';
 
 export default function Card( {classname, icon, name, followers, cardContent, today, todayIcon, todayclassname} ) {
     return (
-        <article className={classname}>
+        <article className={classname} id="crd">
 
             <div className="social__net">
                 <img src={icon} className="icon"  alt="icon"/>

@@ -1,3 +1,7 @@
+:root {
+    --color-border: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
 .card {
     width: 300px;
     height: 270px;
@@ -10,21 +14,29 @@
     align-items: center;
 }
 
+.card--dark {
+    background-color: hsl(228, 28%, 20%);
+}
+
+.numbers--dark {
+    color: #fff;
+}
+
+
 .facebook {
-    border-top: 5px solid hsl(208, 92%, 53%);
+    border-top: 4px solid hsl(208, 92%, 53%);
 }
 
 .twitter {
-    border-top: 5px solid hsl(203, 89%, 53%);
+    border-top: 4px solid hsl(203, 89%, 53%);
 }
 
 .insta {
     border-top: 5px solid;
-    border-color: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
 }
 
 .yt {
-    border-top: 5px solid hsl(348, 97%, 39%);
+    border-top: 4px solid hsl(348, 97%, 39%);
 }
 
 .social__net {
@@ -39,6 +51,7 @@
 }
 
 .username {
+    color: hsl(228, 12%, 44%);
     font-weight: 700;
 }
 

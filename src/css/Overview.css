@@ -8,6 +8,10 @@
     color: hsl(228, 12%, 44%);
 }
 
+.overview__title--dark {
+    color: #fff;
+}
+
 .cards__container {
     margin: 2.2rem 0 0 0;
     display: grid;

@@ -8,6 +8,14 @@
     border-radius: 6px;
 }
 
+.percent__card--dark {
+    background-color: hsl(228, 28%, 20%);
+}
+
+.num__action--dark {
+    color: #fff;
+}
+
 .page__visualization {
     display: flex;
     justify-content: space-between;

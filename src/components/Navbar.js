@@ -10,14 +10,6 @@ export default function navBar() {
             </section>
 
             <span className="border"></span>
-
-            <section className="dark__mode--container">
-                <span className="dm">Dark Mode</span>
-                <label for="checkbox" className="toggler"> 
-                    <input type="checkbox" id="checkbox" />
-                    <span className="ball"></span>
-                </label>
-            </section>
         </nav>
     )
 }

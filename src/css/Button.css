@@ -1,0 +1,61 @@
+.dark__mode--container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dm {
+    margin-right: .8rem;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+}
+
+#checkbox {
+    display: none;
+}
+
+.toggler {
+    display: block;
+    width: 50px;
+    height: 22px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    background-color: hsl(146, 68%, 55%);
+}
+
+.ball {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 1px;
+    z-index: 10;
+    transition: .3s ease;
+}
+
+#checkbox:checked + .ball {
+    transform: translate(28px, -50%);
+}
+
+.toggler--dark {
+   background-color: hsl(146, 68%, 55%);
+}
+
+.ball--dark {
+    background-color: hsl(232, 19%, 15%);
+}
+
+@media (max-width: 375px) {
+    .dark__mode--container {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+}

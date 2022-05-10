@@ -8,12 +8,15 @@ import iconDown from './assets/images/icon-down.svg';
 import Navbar from './components/Navbar';
 import Card from './components/Card';
 import Overview from './components/Overview';
+import Button from './components/Button';
 
 function App() {
+    
   return (
     <div className="App">
       <header>
         <Navbar />
+        <Button />
       </header>
 
       <main>
@@ -64,7 +67,6 @@ function App() {
           todayclassname = "todayNum down"
         />
       </main>
-
         <Overview />
     </div>
   );
